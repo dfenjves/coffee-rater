@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Coffee Rater</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  </head>
+  <body>
+    <form role="form" class="form-inline" method="/" action="post">
+      <div class="form-group">
+        <label for="coffee">Coffee:</label>
+        <input type="text" name="coffee">
+      </div>
+      <div class="form-group">
+        <label for="grind">Grind:</label>
+        <select name="grind">
+          <option value="fine">Fine</option>
+          <option value="medium">Medium</option>
+          <option value="coarse">Coarse</option>
+        </select>
+      </div>
+      <label for="tamp">Tamp Pressure:</label>
+      <select name="tamp">
+        <option value="fine">Light</option>
+        <option value="medium">Medium</option>
+        <option value="coarse">Heavy</option>
+      </select>
+      <label for="rating">Rating:</label>
+      <input type="number" min="1" max="10">
+      <label for="notes">Notes:</label>
+      <textarea rows="2" cols="20" name="notes"></textarea>
+      <input type="submit">
+    </form>
+  </body>
+</html>
